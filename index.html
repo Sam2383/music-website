@@ -1,45 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Web</title>
-    <link href="index.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
-</head>
-<header>
-    <div class="container text-center">
-        <div class="row">
-            <div class="col">
-                <button class="btn btn-outline-secondary dropdown-toggle"></button>
-            </div>
-            <div class="col">
-                <input type="search" class="rounded">
-            </div>
-            <div class="col">
-                <img src="https://media.istockphoto.com/id/1451587807/vector/user-profile-icon-vector-avatar-or-person-icon-profile-picture-portrait-symbol-vector.jpg?s=612x612&w=0&k=20&c=yDJ4ITX1cHMh25Lt1vI1zBn2cAKKAlByHBvPJ8gEiIg=" style="max-height: 60px;" class="img-fluid"/>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CASMusic</title>
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Title -->
+    <header class="text-center mb-5">
+      <h1 class="site-title">CASMusic</h1>
+    </header>
 
+    <!-- Cards Container -->
+    <div class="container d-flex flex-wrap justify-content-center gap-4 mb-4">
+      <!-- Spotify Card -->
+      <div class="card custom-card text-center">
+        <img
+          src="spotify-logo.png"
+          class="card-img-top card-image"
+          alt="Spotify Logo"
+        />
+      </div>
 
-
-        </div>
+      <!-- SoundCloud Card -->
+      <div class="card custom-card text-center">
+        <img
+          src="soundcloud-white-icon.png"
+          class="card-img-top card-image"
+          alt="SoundCloud Logo"
+        />
+      </div>
     </div>
-</header>
 
-<body>
-    <div class="container text-center">
-        <div class="row">
-            <div class="col">
-                <P>hello</P>
-            </div>
-            <div class="col">
-                <P>hello</P>
-
-            </div>
-        </div>
+    <!-- Dropdown -->
+    <div class="text-center mb-4">
+      <div class="dropdown">
+        <button
+          class="btn btn-outline-light dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Other Music Providers
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="#">Apple Music</a></li>
+          <li><a class="dropdown-item" href="#">YouTube Music</a></li>
+          <li><a class="dropdown-item" href="#">Amazon Music</a></li>
+        </ul>
+      </div>
     </div>
-    
-    
-</body>
+
+    <!-- Footer Text -->
+    <footer class="text-center mt-3">
+      <p class="footer-text">Listen to all your favourite playlists in one place.</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
