@@ -1,13 +1,53 @@
 /* Global Styling */
 body {
-    background-color: #000;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
-    padding: 2rem 1rem;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  padding-top: 80px; /* <== This is what moves all content down */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+  /* Nav bar */
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--gray);
+    z-index: 1000;
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start; /* Align links to the left */
     align-items: center;
+    padding: 0;
+  }
+  
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: var(--white);
+    display: inline-block;
+    padding: 0.4rem 0.75rem;         
+    border-radius: 8px;   
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    
+  }
+  
+  .nav-links li a:hover {
+    background-color: gray;
+    transform: translateY(-5px);
   }
   
   /* Title */
@@ -64,4 +104,6 @@ body {
   .dropdown-menu-dark .dropdown-item:hover {
     background-color: #333;
   }
+
+  
   
